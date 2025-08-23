@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Hi-Meow! - Paws and Preferences</title>
+  <meta name="title" content="PickPaw - Paws and Preferences">
+  <meta name="description" content="Learn what's the healthy diet for your kitty buddy.">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    
+  body::before {
+  content: "";
+  position: fixed;
+  top: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: #ffd1e0;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(120px);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: #ff8da3;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(120px);
+}
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="images/logo.png" alt="Hi-Meow! Logo" class="logo">
+    Hi-Meow!
+  </a>
+
+  <!-- Hamburger -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="game.html">Find Your Match</a>
+    <a href="species.html">Learn Cat Species</a>
+    <a href="diet.html">Cats Dietary</a>
+  </nav>
+</header>
+
+ <main>
+  <!-- Dry Food -->
+  <section class="diet-section">
+    <img src="images/dryfood.jpg" alt="Dry food for cats">
+    <div class="text">
+      <h2>Dry Food (Kibble)</h2>
+      <p>Easy to store, long shelf life, and usually cheaper. Choose high-quality kibble (high protein, low carbs) to keep your cat healthy.</p>
+  </section>
+
+  <!-- Wet Food -->
+  <section class="diet-section reverse">
+    <img src="images/wetfood.png" alt="Wet food for cats">
+    <div class="text">
+      <h2>Wet Food (Canned)</h2>
+      <p>Contains more water → helps with hydration. Often preferred by cats because of aroma & texture.</p>
+    </div>
+  </section>
+
+  <!-- Raw Diet -->
+  <section class="diet-section">
+    <img src="images/raw.jpg" alt="Raw cat diet">
+    <div class="text">
+       <h2>Raw Diet (BARF)</h2>
+      <p>Based on raw meat. Requires strict hygiene & balanced nutrition. Not suitable for everyone due to bacterial risks.</p>
+  </section>
+
+  <!-- Homemade -->
+  <section class="diet-section reverse">
+    <img src="images/homemade.png" alt="Homemade cat food">
+    <div class="text">
+      <h2>Homemade Meals</h2>
+      <p>You can cook for your cat, but follow balanced recipes. Avoid just rice + fish. Consult a vet for special menus.</p>
+    </div>
+  </section>
+
+  <!-- Foods to Avoid -->
+  <section class="food-grid">
+    <div class="food-box">
+      <img src="images/chocolate.jpg" alt="Chocolate">
+     <h6>Chocolate & Caffeine</h6>
+      <p>Contains theobromine & caffeine which are toxic to cats.</p>
+    </div>
+    <div class="food-box">
+      <img src="images/onion.jpg" alt="Onion and Garlic">
+      <h6>Onion & Garlic</h6>
+      <p>Can damage red blood cells & cause anemia.</p>
+    </div>
+    <div class="food-box">
+      <img src="images/grapes.jpg" alt="Grapes">
+      <h6>Grapes & Raisins</h6>
+      <p>Harmful to kidneys even in small amounts.</p>
+    </div>
+    <div class="food-box">
+      <img src="images/bones.jpg" alt="Cooked bones">
+      <h6>Cooked Bones</h6>
+      <p>Can splinter & cause internal injuries or blockages.</p>
+    </div>
+    <div class="food-box">
+      <img src="images/milk.jpg" alt="Cow milk">
+      <h6>Cow’s Milk</h6>
+      <p>Many cats are lactose intolerant causing diarrhea & stomach upset.
+    </div>
+  </section>
+
+  <!-- Tips -->
+  <section class="tips-section">
+   <h2>Important Tips</h2>
+    <p>
+      ✔ Always provide fresh water <br>
+      ✔ Feed on a schedule, not free feeding all the time <br>
+      ✔ Choose food according to age & health (kitten, adult, senior, special diet)
+    </p>
+    <a class="back-home" href="index.html">← Back to Home</a>
+  </section>
+</main>
+
+  <footer class="site-footer">
+   <small>Images by <a target="_blank" rel="noopener" href="https://cataas.com/">Cataas </a>  & Pinterest • Built for demo</small>
+  </footer>
+
+<script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+  
+</script>
+
+</body>
+</html>

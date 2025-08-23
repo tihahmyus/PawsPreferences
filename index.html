@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Hi-Meow! - Paws and Preferences</title>
+  <meta name="title" content="PickPaw - Paws and Preferences">
+  <meta name="description" content="Find a kitty to be your Paw-mate">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+
+</head>
+<body class="bg">
+  <header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="images/logo.png" alt="Hi-Meow! Logo" class="logo">
+    Hi-Meow!
+  </a>
+
+  <!-- Hamburger -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="game.html">Find Your Match</a>
+    <a href="species.html">Learn Cat Species</a>
+    <a href="diet.html">Cats Dietary</a>
+  </nav>
+</header>
+
+
+  <main class="hero">
+  <div class="hero-inner">
+    <div class="text-side">
+      <h1><i class="fa-solid fa-cat"></i> Welcome aboard, paw buddy!</h1>
+      <p>Your one-stop center for finding, learning about, and caring for your purr-fect feline friend!</p>
+      <div class="cta-row">
+        <a class="btn primary" href="game.html">Find Your Match</a>
+        <a class="btn ghost" href="species.html">Learn Cat Species</a>
+      </div>
+      <p>Swipe, like, and meet your purr-fect cat—easy, fun, no login!</p>
+    </div>
+
+    <div class="img-side">
+      <img src="images/kitty.png" alt="Hero Cat" class="hero-cat" />
+    </div>
+  </div>
+</main>
+
+  <section class="about">
+    <div class="about-wrapper">
+      <div class="about-inner img-side">
+      <img src="images/kitty 2.png" alt="About cat" class="about-cat" />
+    </div>
+  <div class="about-inner text-side">
+    <h2>About PickPaw</h2>
+    <p>
+      Hi-Meow! helps you find your perfect feline friend 🐾.  
+      Explore cat species, learn about their diets, and play a fun matching game to discover which kitty breed you might be interested in!
+    </p>
+  </div>
+  </div>
+</section>
+
+<section class="species">
+  <div class="species-inner">
+    <h2 class="species-title">Cat Species</h2>
+
+    <div class="species-carousel">
+      <button class="scroll-btn left">❮</button>
+      
+      <div class="species-track">
+        <div class="species-item">
+          <img src="images/persian.jpg" alt="Persian" />
+          <p>Persian</p>
+        </div>
+        <div class="species-item">
+          <img src="images/siamese.jpg" alt="Siamese" />
+          <p>Siamese</p>
+        </div>
+        <div class="species-item">
+          <img src="images/mainecoon.jpg" alt="Maine Coon" />
+          <p>Maine Coon</p>
+        </div>
+        <div class="species-item">
+          <img src="images/bengal.jpg" alt="Bengal" />
+          <p>Bengal</p>
+        </div>
+        <div class="species-item">
+          <img src="images/sphynx.jpg" alt="Sphynx" />
+          <p>Sphynx</p>
+        </div>
+        <div class="species-item">
+          <img src="images/ragdoll.jpg" alt="Ragdoll" />
+          <p>Ragdoll</p>
+        </div>
+        <div class="species-item">
+          <img src="images/bsh.jpg" alt="British Shorthair" />
+          <p>British Shorthair</p>
+        </div>
+        <div class="species-item">
+          <img src="images/sf.jpg" alt="Scottish Fold" />
+          <p>Scottish Fold</p>
+        </div>
+      </div>
+
+      <button class="scroll-btn right">❯</button>
+    </div>
+
+    <div class="species-indicators"></div>
+
+    <div class="species-button">
+      <a href="species.html" class="btn">See All Species</a>
+    </div>
+  </div>
+</section>
+
+
+<script>
+
+
+const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+  
+  const track = document.querySelector(".species-track");
+  const btnLeft = document.querySelector(".scroll-btn.left");
+  const btnRight = document.querySelector(".scroll-btn.right");
+
+  let scrollAmount = 0;
+  const itemWidth = track.querySelector(".species-item").offsetWidth + 20; // item + gap
+  const visibleItems = 6;
+
+  btnRight.addEventListener("click", () => {
+    if (scrollAmount < track.children.length - visibleItems) {
+      scrollAmount++;
+      track.style.transform = `translateX(-${scrollAmount * itemWidth}px)`;
+    }
+  });
+
+  btnLeft.addEventListener("click", () => {
+    if (scrollAmount > 0) {
+      scrollAmount--;
+      track.style.transform = `translateX(-${scrollAmount * itemWidth}px)`;
+    }
+  });
+</script>
+
+  <footer class="site-footer">
+    <small>Images by <a target="_blank" rel="noopener" href="https://cataas.com/">Cataas </a>  & Pinterest • Built for demo</small>
+  </footer>
+</body>
+</html>

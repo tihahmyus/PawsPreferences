@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Hi-Meow! - Paws and Preferences</title>
+  <meta name="title" content="PickPaw - Paws and Preferences">
+  <meta name="description" content="Find a kitty to be your Paw-mate">
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Chewy&display=swap" rel="stylesheet">
+  <link rel="icon" href="images/logo.png" type="image/png">
+  <link rel="stylesheet" href="style.css" />
+
+  <style>
+    
+  body::before {
+  content: "";
+  position: fixed;
+  top: -150px;
+  left: -150px;
+  width: 400px;
+  height: 400px;
+  background: #ffd1e0;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(120px);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  bottom: -150px;
+  right: -150px;
+  width: 400px;
+  height: 400px;
+  background: #ff8da3;
+  border-radius: 50%;
+  z-index: -1;
+  filter: blur(120px);
+}
+  </style>
+</head>
+
+<body>
+  <header class="site-header">
+  <a class="brand" href="index.html">
+    <img src="images/logo.png" alt="Hi-Meow! Logo" class="logo">
+    Hi-Meow!
+  </a>
+
+  <!-- Hamburger -->
+  <button class="menu-toggle" id="menu-toggle">☰</button>
+
+  <nav id="nav-links">
+    <a href="index.html">Home</a>
+    <a href="game.html">Find Your Match</a>
+    <a href="species.html">Learn Cat Species</a>
+    <a href="diet.html">Cats Dietary</a>
+  </nav>
+</header>
+
+  <main class="wrap">
+    <h1>Learn Cat Species 🐾</h1>
+    <p class="lead">A few popular breeds (quick facts). Images are representative; enjoy the kitty cuteness!</p>
+
+    <div class="species-grid">
+      <article class="species-card">
+        <img src="images/bsh.jpg" alt="British Shorthair" />
+        <div>
+          <h3>British Shorthair</h3>
+          <p>Calm, chunky, and very people-friendly. Dense plush coat; often seen in “blue” (grey).</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/mainecoon.jpg" alt="Maine Coon" />
+        <div>
+          <h3>Maine Coon</h3>
+          <p>Gentle giant with tufted ears and a fluffy tail. Playful, social, great with families.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/siamese.jpg" alt="Siamese" />
+        <div>
+          <h3>Siamese</h3>
+          <p>Vocal, affectionate, and intelligent. Distinct color points and striking blue eyes.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/ragdoll.jpg" alt="Ragdoll" />
+        <div>
+          <h3>Ragdoll</h3>
+          <p>Relaxed, cuddly, and often go limp when picked up. Semi-long coat and blue eyes.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/bengal.jpg" alt="Bengal" />
+        <div>
+          <h3>Bengal</h3>
+          <p>Athletic and energetic with a wild-looking spotted or marbled coat.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/persian.jpg" alt="Persian" />
+        <div>
+          <h3>Persian</h3>
+          <p>Long-haired and calm. Sweet temperament, but requires regular grooming.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/sphynx.jpg" alt="Sphynx" />
+        <div>
+          <h3>Sphynx</h3>
+          <p>Hairless breed, affectionate, and loves warmth and attention. Needs skin care.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/sf.jpg" alt="Scottish Fold" />
+        <div>
+          <h3>Scottish Fold</h3>
+          <p>Known for folded ears, round face, and soft temperament. Friendly and quiet.</p>
+        </div>
+      </article>
+      <article class="species-card">
+        <img src="images/abyssinian.jpg" alt="Abyssinian" />
+        <div>
+          <h3>Abyssinian</h3>
+          <p>Short-haired, very active and playful. Curiosity-driven, loves climbing and exploring.</p>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <small>Images by <a target="_blank" rel="noopener" href="https://cataas.com/">Cataas </a>  & Pinterest • Built for demo</small>
+  </footer>
+
+  <script>
+  const toggle = document.getElementById('menu-toggle');
+  const nav = document.getElementById('nav-links');
+
+  toggle.addEventListener('click', () => {
+    nav.classList.toggle('show');
+  });
+  
+</script>
+</body>
+</html>
