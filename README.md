@@ -8,9 +8,9 @@ Includes an interactive card stack feature for a fun browsing experience.
 
 ## 🚀 Features
 - Responsive design (desktop & mobile)
-- Cat species cards with images
-- Interactive swipeable card stack
-- Sticky header & footer
+- Kitty swipe games with images
+- Learn cats species
+- Learn cats diet
 
 ## 🛠️ Tech Stack
 HTML | CSS | JavaScript | Font Awesome
