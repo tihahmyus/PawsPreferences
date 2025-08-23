@@ -1,7 +1,7 @@
 # Paws-and-Preferences-Find-Your-Favourite-Kitty
 
  
-🐾 Hi-Meow: Cat Species Guide
+🐾 Hi-Meow: 
 
 A simple responsive website that showcases different cat species with images and short descriptions.  
 Includes an interactive card stack feature for a fun browsing experience.  
