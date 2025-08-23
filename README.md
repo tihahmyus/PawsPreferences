@@ -1,2 +1,16 @@
 # Paws-and-Preferences-Find-Your-Favourite-Kitty
-Planning to be a paw-parents? You are in the right place! Find your favourite kitty from our platform.
+
+ 
+🐾 Hi-Meow: Cat Species Guide
+
+A simple responsive website that showcases different cat species with images and short descriptions.  
+Includes an interactive card stack feature for a fun browsing experience.  
+
+## 🚀 Features
+- Responsive design (desktop & mobile)
+- Cat species cards with images
+- Interactive swipeable card stack
+- Sticky header & footer
+
+## 🛠️ Tech Stack
+HTML | CSS | JavaScript | Font Awesome
